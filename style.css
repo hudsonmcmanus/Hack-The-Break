@@ -3,8 +3,16 @@ body {
     color: #fff;
 }
 
-section:first-of-type {
-    background: linear-gradient(to right, #5d4157, #a8caba);
+.parallax {
+    /* The image used */
+    background-image: url("images/banner.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section:not(:first-of-type) {
