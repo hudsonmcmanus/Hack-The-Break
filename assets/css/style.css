@@ -37,6 +37,14 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(to bottom, #cccccc, #d9d9d9, #e5e5e5, #f2f2f2, #ffffff);
 }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: red;
+  z-index: 11;
+}
+
 /* .parallax {
   background: url("../img/banner.gif") top right no-repeat;
   height: 100%;
@@ -786,6 +794,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: var(--secondary);
 }
 
 .services .icon-box:hover {
@@ -864,78 +873,6 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 } */
-
-.services .iconbox-blue i {
-  color: var(--accent);
-}
-
-.services .iconbox-blue:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-blue:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-orange i {
-  color: var(--accent);
-}
-
-.services .iconbox-orange:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-orange:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-pink i {
-  color: var(--accent);
-}
-
-.services .iconbox-pink:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-pink:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-yellow i {
-  color: var(--accent);
-}
-
-.services .iconbox-yellow:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-yellow:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-red i {
-  color: var(--accent);
-}
-
-.services .iconbox-red:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-red:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-teal i {
-  color: var(--accent);
-}
-
-.services .iconbox-teal:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-teal:hover .icon path {
-  fill: var(--accent);
-}
 
 .contact .info {
   width: 100%;
