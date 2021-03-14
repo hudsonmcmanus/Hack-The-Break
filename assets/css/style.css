@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: var(--accent);
+  background: var(--secondary);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top i {
   font-size: 28px;
-  color: var(--on-accent);
+  color: var(--on-secondary);
   line-height: 0;
 }
 
@@ -764,6 +764,7 @@ section {
   box-shadow: none;
   font-size: 14px;
   background-color: var(--primary);
+  color: var(--on-primary);
 }
 
 .contact .php-email-form input {
@@ -775,10 +776,10 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: var(--accent);
+  background: var(--secondary);
   border: 0;
   padding: 10px 35px;
-  color: var(--on-accent);
+  color: var(--on-secondary);
   transition: 0.4s;
   border-radius: 50px;
   font-weight: bold;
