@@ -7,8 +7,9 @@
 }
 
 body {
+  line-height: 30px;
   font-family: 'Roboto', sans-serif;
-  color: var(--secondary);
+  color: #000;
   background-color: var(--primary);
   margin: 0;
   padding: 0;
@@ -37,6 +38,14 @@ h1, h2, h3, h4, h5, h6 {
   background-image: linear-gradient(to bottom, #cccccc, #d9d9d9, #e5e5e5, #f2f2f2, #ffffff);
 }
 
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: red;
+  z-index: 11;
+}
+
 /* .parallax {
   background: url("../img/banner.gif") top right no-repeat;
   height: 100%;
@@ -46,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-image: linear-gradient(to bottom, #cccccc, #d9d9d9, #e5e5e5, #f2f2f2, #ffffff);
 } */
+
 .highlight {
   color: var(--accent);
 }
@@ -265,6 +275,28 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--accent);
 }
 
+.who_logo {
+  position: absolute;
+  width:50%;
+  opacity: 0.3;
+  margin: 0 0 0 75px;
+  z-index: 9;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 1000px) {
+  .who_logo {
+    margin: auto;
+    left: 0;
+    right:0;
+    top:0;
+    bottom:35%;
+    width:45%;
+  }
+}
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -275,11 +307,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 10;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    padding-left: 100px;
   }
-}
+} */
 
 #hero:before {
   content: "";
@@ -670,13 +702,12 @@ section {
   display: block;
   font-weight: 600;
   color: var(--accent);
+  padding: 25px;
 }
 
 .facts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
 }
 
 .skills .progress {
@@ -735,6 +766,7 @@ section {
   font-size: 64px;
   transition: 0.5s;
   position: relative;
+  color: var(--accent);
 }
 
 .services .icon-box .icon svg {
@@ -751,7 +783,6 @@ section {
 .services .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
-  font-size: 22px;
 }
 
 .services .icon-box h4 a {
@@ -760,14 +791,12 @@ section {
 }
 
 .services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
   margin-bottom: 0;
 }
 
 .services .icon-box:hover {
   border-color: #fff;
-  /* box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08); */
+  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
 
 /* .services .iconbox-blue i {
@@ -841,78 +870,6 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 } */
-
-.services .iconbox-blue i {
-  color: var(--accent);
-}
-
-.services .iconbox-blue:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-blue:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-orange i {
-  color: var(--accent);
-}
-
-.services .iconbox-orange:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-orange:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-pink i {
-  color: var(--accent);
-}
-
-.services .iconbox-pink:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-pink:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-yellow i {
-  color: var(--accent);
-}
-
-.services .iconbox-yellow:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-yellow:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-red i {
-  color: var(--accent);
-}
-
-.services .iconbox-red:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-red:hover .icon path {
-  fill: var(--accent);
-}
-
-.services .iconbox-teal i {
-  color: var(--accent);
-}
-
-.services .iconbox-teal:hover .icon i {
-  color: var(--on-accent);
-}
-
-.services .iconbox-teal:hover .icon path {
-  fill: var(--accent);
-}
 
 .contact .info {
   width: 100%;
@@ -1081,7 +1038,7 @@ section {
 }
 
 #footer .social-links {
-  margin: 0 0 40px 0;
+  margin: 20px 0 20px 0;
 }
 
 #footer .social-links a {
