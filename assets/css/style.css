@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
   --primary: #fff;
-  --secondary: #16223b;
-  --accent: #5f93e0;
+  --secondary: #123764;
+  --accent: #008DC9;
   --on-accent: var(--primary);
   --glass: rgba(255, 255, 255, 0.8);
 }
@@ -11,6 +11,8 @@ body {
   font-family: 'Roboto', sans-serif;
   color: var(--secondary);
   background-color: var(--primary);
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -25,6 +27,15 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: radial-gradient(circle, #ffffff, #f2f2f2, #e5e5e5, #d9d9d9, #cccccc);
 }
 
 .highlight {
@@ -248,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-size: cover;
   position: relative;
   font-weight: bold;
@@ -1089,11 +1100,11 @@ section {
   font-size: 13px;
 }
 
-.parallax {
+/* .parallax {
   background: url("../img/banner.gif") top right no-repeat;
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
