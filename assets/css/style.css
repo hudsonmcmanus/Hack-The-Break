@@ -251,6 +251,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background-size: cover;
   position: relative;
+  font-weight: bold;
+  text-align: right;
 }
 
 @media (min-width: 992px) {
@@ -557,7 +559,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: var(--accent);
+  color: var(--secondary);
 }
 
 .section-title h2::before {
