@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .who_logo {
   position: absolute;
-  width:50%;
+  width: 50%;
   opacity: 0.3;
   margin: 0 0 0 75px;
   z-index: 9;
@@ -290,10 +290,10 @@ h1, h2, h3, h4, h5, h6 {
   .who_logo {
     margin: auto;
     left: 0;
-    right:0;
-    top:0;
-    bottom:35%;
-    width:45%;
+    right: 0;
+    top: 0;
+    bottom: 35%;
+    width: 45%;
   }
 }
 
@@ -907,6 +907,18 @@ section {
 
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
+}
+
+.icon-box {
+  text-align: center;
+}
+
+.icon-box ul {
+  display: inline-block;
+}
+
+.icon-box ul li {
+  text-align: left;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
