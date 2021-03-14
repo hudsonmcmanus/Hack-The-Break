@@ -1077,3 +1077,17 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.learn-more {
+  background: var(--secondary);
+  border: 0;
+  padding: 10px 35px;
+  color: var(--primary);
+  transition: 0.4s;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.learn-more {
+  background: var(--accent);
+}
