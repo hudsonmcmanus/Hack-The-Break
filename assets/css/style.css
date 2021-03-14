@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 :root {
   --primary: #000;
   --secondary: #fff;
@@ -253,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -269,7 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent);
 }
 
-#hero p { 
+#hero p {
   color: var(--on-primary);
   margin: 15px 0 0 0;
   font-size: 26px;
