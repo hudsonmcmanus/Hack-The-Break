@@ -202,4 +202,17 @@
     })
   });
 
+  window.onload = function () {
+    Particles.init({
+      selector: ".background",
+      maxParticles: 200,
+      sizeVariations: 2,
+      speed: 0.2,
+      color: "#cccccc",
+      // minDistance: 120,
+      connectParticles: true,
+      // responsive: []
+    });
+  };
+
 })()
