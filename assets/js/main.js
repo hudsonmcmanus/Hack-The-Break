@@ -21,7 +21,6 @@
     }
   }
 
-
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
   }
@@ -43,7 +42,6 @@
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
-
   const scrollto = (el) => {
     let elementPos = select(el).offsetTop
     window.scrollTo({
@@ -51,7 +49,6 @@
       behavior: 'smooth'
     })
   }
-
 
   let backtotop = select('.back-to-top')
   if (backtotop) {
@@ -66,13 +63,11 @@
     onscroll(document, toggleBacktotop)
   }
 
-
   on('click', '.mobile-nav-toggle', function (e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
-
 
   on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
@@ -89,7 +84,6 @@
     }
   }, true)
 
-
   window.addEventListener('load', () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
@@ -98,14 +92,12 @@
     }
   });
 
-
   let preloader = select('#preloader');
   if (preloader) {
     window.addEventListener('load', () => {
       preloader.remove()
     });
   }
-
 
   const typed = select('.typed')
   if (typed) {
@@ -119,7 +111,6 @@
       backDelay: 2000
     });
   }
-
 
   let skilsContent = select('.skills-content');
   if (skilsContent) {
@@ -135,12 +126,11 @@
     })
   }
 
-
   window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
+    let portfolioContainer = select('.card-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.card-item'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -163,26 +153,38 @@
 
   });
 
-
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: '.card-lightbox'
   });
 
-
   const portfolioDetailsLightbox = GLightbox({
-    selector: '.portfolio-details-lightbox',
+    selector: '.card-details-lightbox',
     width: '90%',
     height: '90vh'
   });
 
-
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.card-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+
+  new Swiper('.testimonials-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
