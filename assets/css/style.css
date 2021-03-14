@@ -2,7 +2,7 @@
 :root {
   --primary: #fff;
   --secondary: #16223b;
-  --accent: #ff2222;
+  --accent: #5f93e0;
   --on-accent: var(--primary);
   --glass: rgba(255, 255, 255, 0.8);
 }
