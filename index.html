@@ -51,6 +51,27 @@
 
   </header>
 
+  <!-- Particles shit no touchy (https://marcbruederlin.github.io/particles.js/)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  
+  <script>
+    window.onload = function () {
+      Particles.init({
+        selector: ".background",
+        maxParticles: 200,
+        sizeVariations: 2,
+        speed: 0.1,
+        color: "#cccccc",
+        // minDistance: 120,
+        connectParticles: true,
+        // responsive: []
+      });
+    };
+  </script>
+
+  <canvas class="background"></canvas>
+  
+  <!-- Start content and that stuff -->
   <section id="hero" class="d-flex flex-column justify-content-center parallax">
       </h1>
     <div justify="center" class="container" data-aos="zoom-in" data-aos-delay="100">
@@ -503,26 +524,6 @@
 
 
   <script src="assets/js/main.js"></script>
-
-  <!-- Particles shit no touchy (https://marcbruederlin.github.io/particles.js/)-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-  
-  <script>
-    window.onload = function () {
-      Particles.init({
-        selector: ".background",
-        maxParticles: 200,
-        sizeVariations: 2,
-        speed: 0.1,
-        color: "#cccccc",
-        // minDistance: 120,
-        connectParticles: true,
-        // responsive: []
-      });
-    };
-  </script>
-
-  <canvas class="background"></canvas>
 </body>
 
 </html>
