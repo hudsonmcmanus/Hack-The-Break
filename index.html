@@ -39,11 +39,11 @@
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Our Purpose</span></a></li>
         <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Facts</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Unnamed</span></a>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Who We Are</span></a>
         </li>
-        <li><a href="#card" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>card</span></a>
+        <li><a href="#card" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Card</span></a>
         </li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
@@ -51,16 +51,36 @@
 
   </header>
 
+  <!-- Particles shit no touchy (https://marcbruederlin.github.io/particles.js/)-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+  
+  <script>
+    window.onload = function () {
+      Particles.init({
+        selector: ".background",
+        maxParticles: 200,
+        sizeVariations: 2,
+        speed: 0.15,
+        color: "#cccccc",
+        // minDistance: 120,
+        connectParticles: true,
+        // responsive: []
+      });
+    };
+  </script>
 
+  <canvas class="background"></canvas>
+  <img class="who_logo" src="assets/img/who_logo.png" alt=""></img>
+  
+  <!-- Start content and that stuff -->
   <section id="hero" class="d-flex flex-column justify-content-center parallax">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>
-        Project <span class="highlight">GAMA</span>
-      </h1>
-      <p>
-        The <span class="highlight-acronym">G</span>lobal <span class="highlight-acronym">A</span>ction for <span
-          class="highlight-acronym">M</span>easurement of <span class="highlight-acronym">A</span>dolescent health
-      </p>
+    <div justify="center" class="container" data-aos="zoom-in" data-aos-delay="100">
+      <div>
+        <h1>PROJECT <span class="highlight">GAMA</span></h1>
+        <p>
+          The <span class="highlight">G</span>lobal <span class="highlight">A</span>ction for <span class="highlight">M</span>easurement of <span class="highlight">A</span>dolescent health
+        </p>
+      </div>
     </div>
   </section>
 
@@ -79,18 +99,23 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3 style="font-weight: 700; font-size: 26px;">The Global Action for Measurement of Adolescent Health</h3>
             <p class="font-italic">
-              Adolescents – young people between the ages of 10 and 19 years – play a crucial role in achieving many of the Sustainable 
-              Development Goals. They represent over 16% of the global population, and investments in adolescents now will also benefit 
-              their future adult lives and their future children. 
+              Adolescents – young people between the ages of 10 and 19 years – play a crucial role in achieving many of
+              the Sustainable
+              Development Goals. They represent over 16% of the global population, and investments in adolescents now
+              will also benefit
+              their future adult lives and their future children.
             </p>
             <p class="font-italic">
-              Measurement of health behaviours and determinants, outcomes, and policy and programme implementation is essential to track 
-              progress towards improving adolescent health. 
+              Measurement of health behaviours and determinants, outcomes, and policy and programme implementation is
+              essential to track
+              progress towards improving adolescent health.
             </p>
             <p class="font-italic">
-              To improve adolescent health measurement globally, WHO, in collaboration with UNAIDS, UNESCO, UNFPA, UNICEF, UN Women, the 
-              World Bank Group, and the World Food Programme (WFP), has established the Global Action for the Measurement of Adolescent health 
-              (GAMA) Advisory Group. 
+              To improve adolescent health measurement globally, WHO, in collaboration with UNAIDS, UNESCO, UNFPA,
+              UNICEF, UN Women, the
+              World Bank Group, and the World Food Programme (WFP), has established the Global Action for the
+              Measurement of Adolescent health
+              (GAMA) Advisory Group.
             </p>
           </div>
         </div>
@@ -470,9 +495,11 @@
 
   <footer id="footer">
     <div class="container">
-      <h2>
-        Project <span class="highlight">GAMA</span>
-      </h2>
+      <h4>
+        <b>
+          PROJECT <span class="highlight">GAMA</span>
+        </b>
+      </h4>
       <p>This is a footer. This is a footer. This is a footer. This is a footer. This is a footer. This is a footer.
       </p>
       <div class="social-links">
@@ -503,8 +530,9 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/js/main.js"></script>
 
+
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

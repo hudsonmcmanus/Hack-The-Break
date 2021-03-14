@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
   --primary: #fff;
-  --secondary: #16223b;
-  --accent: #5f93e0;
+  --secondary: #123764;
+  --accent: #008DC9;
   --on-accent: var(--primary);
-  --glass: rgba(255, 255, 255, 0.8);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--secondary);
   background-color: var(--primary);
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -27,6 +28,24 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
 }
 
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: linear-gradient(to bottom, #cccccc, #d9d9d9, #e5e5e5, #f2f2f2, #ffffff);
+}
+
+/* .parallax {
+  background: url("../img/banner.gif") top right no-repeat;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, #cccccc, #d9d9d9, #e5e5e5, #f2f2f2, #ffffff);
+} */
 .highlight {
   color: var(--accent);
 }
@@ -181,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a span {
   padding: 0 5px 0 7px;
-  color: #8b3c3c;
+  color: var(--secondary);
 }
 
 @media (min-width: 992px) {
@@ -246,11 +265,33 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--accent);
 }
 
+.who_logo {
+  position: absolute;
+  width:50%; 
+  opacity: 0.3;
+  margin-left: 100px;
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .who_logo {
+    margin:auto;
+    left:0;
+    right:0;
+    top:0;
+    bottom:47%;
+    width:45%;
+  }
+}
+
 #hero {
   width: 100%;
   height: 100vh;
   background-size: cover;
   position: relative;
+  font-weight: bold;
+  text-align: right;
+  z-index: 10;
 }
 
 @media (min-width: 992px) {
@@ -261,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: var(--glass);
+  background: transparent;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -557,7 +598,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: var(--accent);
+  color: var(--secondary);
 }
 
 .section-title h2::before {
@@ -565,13 +606,13 @@ section {
   position: absolute;
   display: block;
   width: 120px;
-  height: 1px;
+  height: 3px;
   background: var(--secondary);
   bottom: 1px;
   left: calc(50% - 60px);
 }
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
@@ -580,7 +621,7 @@ section {
   background: var(--secondary);
   bottom: 0;
   left: calc(50% - 20px);
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
@@ -710,7 +751,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  font-size: 36px;
+  font-size: 64px;
   transition: 0.5s;
   position: relative;
 }
@@ -1085,13 +1126,4 @@ section {
 
 #footer .credits {
   font-size: 13px;
-}
-
-.parallax {
-  background: url("../img/banner.gif") top right no-repeat;
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
