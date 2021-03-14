@@ -6,6 +6,7 @@
   --on-primary: #fff;
   --on-secondary: #000;
   --on-accent: #000;
+  --glass: rgba(0, 0, 0, 0.8);
 }
 
 body {
@@ -26,6 +27,10 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
+}
+
+.highlight {
+  color: var(--accent);
 }
 
 .back-to-top {
@@ -252,7 +257,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--glass);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -265,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: var(--accent);
+  color: var(--on-primary);
 }
 
 #hero p {
