@@ -588,13 +588,13 @@ section {
   position: absolute;
   display: block;
   width: 120px;
-  height: 1px;
+  height: 3px;
   background: var(--secondary);
   bottom: 1px;
   left: calc(50% - 60px);
 }
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
@@ -603,7 +603,7 @@ section {
   background: var(--secondary);
   bottom: 0;
   left: calc(50% - 20px);
-}
+} */
 
 .section-title p {
   margin-bottom: 0;
